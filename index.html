@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialized Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialized Icon -->
+
+    <!-- font-awesome icon -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.min.css" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="indigo-text text-lighten-1">Parallax</h1>
+            </div>
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab"><a class="indigo-text text-lighten-1" href="#PARALLAX">PARALLAX</a></li>
+                    <li class="tab"><a class="indigo-text text-lighten-1" href="#MODAL">MODAL</a></li>
+                    <li class="tab"><a class="indigo-text text-lighten-1" href="#MODAL-FIXED">MODAL WITH FIXED
+                            FOOTER</a></li>
+                    <li class="tab"><a class="indigo-text text-lighten-1" href="#BOTTOM-SHEET">BOTTOM SHEET
+                            MODAL</a></li>
+                    <li class="tab"><a class="indigo-text text-lighten-1" href="#DATE-PICKER">DATE PICKER</a>
+                    </li>
+                    <li class="tab"><a class="indigo-text text-lighten-1" href="#TIME-PICKER">TIME PICKER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+        <div id="PARALLAX" class="section scrollspy">
+            <div class="col s12">
+                <p class="flow-text grey-text text-darken-3">Parallax is an effect where the background content or
+                    image
+                    in this case, is moved at a different speed than the foreground content while scrolling. Check
+                    out
+                    the demo to get a better idea of it.</p>
+
+                <div class="parallax-container">
+                    <div class="parallax"><img src="image/curved-images/curved7.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div id="MODAL" class="section scrollspy">
+            <div class="col s12">
+                <h1 class="indigo-text text-lighten-1">Modal</h1>
+                <p class="flow-text grey-text text-darken-3">Use a modal for dialog boxes, confirmation messages, or
+                    other content that can be called up. In order for the modal to work you have to add the Modal ID
+                    to
+                    the link of the trigger. To add a close button, just add the class .modal-close to your button.
+                </p>
+
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Open Modal</a>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="MODAL-FIXED" class="section scrollspy">
+            <div class="col s12">
+                <h1 class="indigo-text text-lighten-1">Modal with Fixed Footer</h1>
+                <p class="flow-text grey-text text-darken-3">If you have content that is very long and you want the
+                    action buttons to be visible all the time, you can add the modal-fixed-footer class to the
+                    modal.
+                </p>
+
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Open Modal with Fixed
+                    Footer</a>
+
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal modal-fixed-footer">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="BOTTOM-SHEET" class="section scrollspy">
+            <div class="col s12">
+                <h1 class="indigo-text text-lighten-1">Bottom Sheet Modals</h1>
+                <p class="flow-text grey-text text-darken-3">Bottom Sheet Modals are good for displaying actions to
+                    the
+                    user on the bottom of a screen. They still act the same as regular modals.</p>
+
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Open Modal Bottom Sheet</a>
+
+                <!-- Modal Structure -->
+                <div id="modal3" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="DATE-PICKER" class="section scrollspy">
+            <div class="col s12">
+                <h1 class="indigo-text text-lighten-1">Date Picker</h1>
+                <p class="flow-text grey-text text-darken-3">The datepicker allows users to select a date from an
+                    interactive calendar.
+                </p>
+
+                <input type="text" class="datepicker">
+            </div>
+        </div>
+        <div id="TIME-PICKER" class="section scrollspy">
+            <div class="col s12">
+                <h1 class="indigo-text text-lighten-1">Time Picker</h1>
+                <p class="flow-text grey-text text-darken-3">The timepicker allows users to select a date from an
+                    interactive clock.</p>
+
+                <input type="text" class="timepicker">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('.parallax').parallax();
+        $('.modal').modal();
+        $('.modal.bottom-sheet').modal();
+        $('.modal.modal-fixed-footer').modal();
+        $('.scrollspy').scrollSpy();
+        $('.timepicker').timepicker();
+        $('.datepicker').datepicker();
+    });
+
+</script>
